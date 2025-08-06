@@ -1,0 +1,244 @@
+/* =======================
+   :root & Global Styles
+   ======================= */
+:root {
+    --primary-color: #ffffff;
+    --hover-color: #808080;
+    --hover-text-color: #e100ff;
+    --accent-color: #0071FF;
+    --text-color: #000000;
+    --navbar-corner-rounding: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Poppins, 'Segoe UI', sans-serif;
+    color: var(--text-color);
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+main {
+    padding: min(5em, 7%);
+    margin-top: 100px; /* Prevent content from overlapping fixed header */
+}
+
+
+/* =======================
+   Header & Navigation Bar
+   ======================= */
+
+/* Header container */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Push first child left, last child right */
+    position: relative;
+    height: 70px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: var(--primary-color);
+    border-bottom: 1px solid var(--hover-color);
+    padding: 0 1em;
+}
+
+/* Navigation container */
+nav {
+    background-color: var(--primary-color);
+}
+
+/* Navigation list (top-level menu) */
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Top-level navigation items */
+nav > ul > li {
+    display: flex;
+    margin: 0; /* Remove default spacing */
+    border-radius: var(--navbar-corner-rounding);
+}
+
+/* Remove bottom rounding on dropdown parents */
+nav > ul > li.dropdown {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* Links inside nav */
+nav a {
+    display: flex;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 1em 2em;
+}
+
+/* Navigation list items positioning context for dropdown */
+nav li {
+    position: relative; /* Needed for dropdown absolute positioning */
+}
+
+
+/* Sidebar toggle buttons (hidden on desktop) */
+#open-sidebar-button,
+#close-sidebar-button {
+    display: none;
+    background: none;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+    fill: var(--text-color);
+}
+
+/* Overlay that appears when sidebar nav is open */
+#overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    inset: 0;
+    z-index: 99;
+    display: none;
+}
+
+/* =======================
+   Responsive Navigation (Mobile)
+   ======================= */
+@media screen and (max-width: 806px) {
+    /* Show sidebar buttons on mobile */
+    #open-sidebar-button,
+    #close-sidebar-button {
+        display: block;
+    }
+
+    /* Sidebar nav panel */
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Hidden by default */
+        height: 100vh;
+        width: min(15em, 100%);
+        z-index: 100;
+        border-left: 1px solid var(--hover-color);
+        transition: right 300ms ease-in-out;
+        background-color: var(--primary-color);
+    }
+
+    /* Show sidebar nav when active */
+    nav.show {
+        right: 0;
+    }
+
+    /* Show overlay when sidebar nav is open */
+    nav.show ~ #overlay {
+        display: block;
+    }
+
+    /* Make nav items stack vertically */
+    nav ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    /* Make nav links full width with left padding */
+    nav a {
+        width: 100%;
+        padding-left: 2.5em;
+    }
+
+    /* Dropdown menu overrides */
+    .dropdown-menu {
+        position: relative;
+        border: none;
+    }
+
+    /* Disable hover dropdown on mobile */
+    .dropdown:hover .dropdown-menu {
+        display: none;
+    }
+
+    /* Show dropdown menu only when JS toggles `.show` */
+    .dropdown-menu.show {
+        display: block;
+    }
+}
+
+/* =======================
+   Logo Styling
+   ======================= */
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5em; /* space between image and text */
+    text-decoration: none; /* remove underline */
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1.25rem;
+    height: 100%; /* fill header height */
+}
+
+#logo img {
+    height: 100%; /* fill header height */
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    image-rendering: pixelated; /* sharper pixelated images when scaled */
+}
+
+/* =======================
+   Hover Effects
+   ======================= */
+.hover-effect-icon:hover {
+    background-color: var(--hover-color);
+}
+
+.hover-effect-text:hover {
+    color: var(--hover-text-color);
+}
+
+/* =======================
+   Dropdown Menu Styling
+   ======================= */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--primary-color);
+    border: 1px solid var(--hover-color);
+    min-width: 200px;
+    z-index: 200;
+    flex-direction: column;
+    border-radius: 0 var(--navbar-corner-rounding) var(--navbar-corner-rounding) var(--navbar-corner-rounding); /* TL, TR, BR, BL */
+    overflow: hidden;
+}
+
+/* Show dropdown on hover (desktop only) */
+.dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
+/* Dropdown toggle button styling */
+.dropdown-toggle {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    padding: 1em 2em;
+    font: inherit;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    border-radius: var(--navbar-corner-rounding) var(--navbar-corner-rounding) 0 0;
+}

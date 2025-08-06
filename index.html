@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="src/styles/index.css">
+    <script src="src/scripts/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" id="logo">
+            <img src="public/images/placeHolderSquare.png" alt="Logo" />
+            <span class="hover-effect-text">WebSite</span>
+        </a>
+        <button id="open-sidebar-button" onclick="openSidebar()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"><path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z"/></svg>
+        </button>
+        <nav id="navbar">
+            <ul>
+                <!-- Nav bar -->
+                <li class="hover-effect-icon"><a href="#" class="hover-effect-text">Home</a></li>
+                <li class="hover-effect-icon dropdown">
+                    <button class="dropdown-toggle hover-effect-icon" onclick="toggleDropdown(event)">About</button>
+                    <ul class="dropdown-menu">
+                        <li class="hover-effect-icon"><a href="#" class="hover-effect-text">Our Team</a></li>
+                        <li class="hover-effect-icon"><a href="#" class="hover-effect-text">Student Members</a></li>
+                        <li class="hover-effect-icon"><a href="#" class="hover-effect-text">Coaches & Mentors</a></li>
+                    </ul>
+                </li>
+                <li class="hover-effect-icon"><a href="#" class="hover-effect-text">Events</a></li>
+                <li class="hover-effect-icon"><a href="#" class="hover-effect-text">Contact us</a></li>
+            </ul>
+        </nav>
+        
+        <div id="overlay" onclick="closeSidebar()"></div>
+    </header>
+
+    <main>
+        
+    </main>
+</body>
+</html>
