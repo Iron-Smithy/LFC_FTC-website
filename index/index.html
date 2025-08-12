@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="src/styles/index.css">
-    <script src="src/scripts/index.js" defer></script>
+    <link rel="stylesheet" href="../src/styles/index.css">
+    <script type="module" src="../src/components/carousel/image-carousel.js"></script>
+    <script src="../src/scripts/index.js" defer></script>
 </head>
 <body>
     <header>
         <a id="logo" href="index.html">
-        <img src="public/images/placeHolderSquare.png" alt="Logo">
+        <img src="../public/images/placeHolderSquare.png" alt="Logo">
         <span class="hover-effect-text">WebSite</span>
         </a>
 
@@ -52,6 +53,7 @@
     <main>
         <h1>Page content</h1>
         <p>Resize the window to test mobile (≤806px) and desktop behavior.</p>
+        <image-carousel src="carousel-without-a-name.json" primary-color="green" secondary-color="yellow" text-color="purple" background-color="#FF0000" width="700px" height="500px"></image-carousel>
     </main>
 </body>
 </html>
