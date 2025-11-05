@@ -51,9 +51,53 @@
     </header>
 
     <main>
-        <h1>Page content</h1>
-        <p>Resize the window to test mobile (≤806px) and desktop behavior.</p>
-        <image-carousel src="carousel-example.json" primary-color="green" secondary-color="yellow" text-color="purple" background-color="#FF0000" width="700px" height="500px"></image-carousel>
+        <section id="who-we-are-section" class="content-section">
+            <div class="container">
+                <h1>WHO WE ARE</h1>
+                <div class="section-content indent">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum possimus minus quidem, enim facilis cupiditate similique! Dolorum earum aut omnis pariatur perferendis neque, amet officia corporis! Ullam commodi quasi ab.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, repellendus at odio sequi quam laboriosam veniam accusantium suscipit culpa sunt tempore esse cupiditate quisquam, voluptate eum, ut deleniti possimus error?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, ad inventore quidem quae dignissimos obcaecati alias illo quia optio, velit iste asperiores deserunt! Quos sunt iste labore culpa aliquid alias!</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="this-years-competition-section" class="content-section">
+            <div class="container">
+                <h1>This years competition</h1>
+                <div class="video-wrapper indent">
+                    <iframe width="420" height="315"
+                        src="https://www.youtube.com/embed/LCqWA6gSCXA?mute=1"
+                        title="This year's competition video"
+                        allowfullscreen
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section> 
+        
+        <section id="teams" class="content-section">
+            <div class="team-grid">
+                <div class="team-card" style="background: black;">
+                    <img src="logo1.png" alt="Team 1 Logo">
+                </div>
+                <div class="team-card" style="background: linear-gradient(45deg, orange, yellow);">
+                    <span class="team-name">Team Orange</span>
+                </div>
+                <div class="team-card spinning-gear" style="background: #ccc;">
+                    <img src="gear.png" alt="Spinning Gear">
+                </div>
+                <div class="team-card" style="background: blue;">
+                    <span class="team-name">Team Blue</span>
+                </div>
+                <div class="team-card" style="background: green;">
+                    <span class="team-name">Team Green</span>
+                </div>
+                <div class="team-card" style="background: red;">
+                    <span class="team-name">Team Red</span>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
