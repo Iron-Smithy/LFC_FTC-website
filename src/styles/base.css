@@ -1,0 +1,25 @@
+:root {
+    --primary-color: #ffffff;
+    --hover-color: #e6e6e6;
+    --hover-text-color: #e100ff;
+    --text-color: #000000;
+    --acent-text-color: #00ff4c;
+    --font: 'Poppins', sans-serif;
+    --navbar-corner-rounding: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: var(--font);
+    color: var(--text-color);
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--primary-color);
+}
