@@ -38,24 +38,24 @@
     margin-top: 0.5rem;
     font-weight: 600;
     color: var(--acent-text-color);
+    text-decoration: none;
 }
 
-/* Optional overlay version
-.team-card-sub {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    text-align: center;
-    font-weight: 600;
-    color: white;
-    background: rgba(0,0,0,0.4);
-    backdrop-filter: blur(4px);
-    padding: 6px 0;
+.team-link {
+    text-decoration: none;
+    color: inherit;
 }
-*/
 
-.spinning-gear img {
+.spinning img {
     animation: spin 4s linear infinite;
+}
+.card-tilt:hover {
+    transform: scale(1.05) rotate(-2deg); /* small tilt for fun */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+.team-link:active .team-card {
+    transform: scale(0.95) rotate(-5deg);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
 
 @keyframes spin {
@@ -78,4 +78,44 @@
     .team-card {
         font-size: 1rem;
     }
+}
+
+/* Overclock gear spining idea */
+.gear-container {
+    position: relative;
+    width: 100%; /* adjust for your card size */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* All gears share basic styles */
+.gear {
+    position: absolute;
+    object-fit: contain;
+    transform-origin: center;
+}
+/* Center gear/logo */
+.gear-main {
+    z-index: 1; /* above secondary gear */
+    width: 70%;
+    height: 70%;
+    animation: spin-clockwise 8s linear infinite;
+}
+/* meshed gear */
+.gear-secondary {
+    z-index: 0; /* behind main gear */
+    width: 60%;
+    height: 60%;
+    left: -92px; /* offset left */
+    animation: spin-counter 8s linear infinite;
+}
+/* Spin animations */
+@keyframes spin-clockwise {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes spin-counter {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
 }
