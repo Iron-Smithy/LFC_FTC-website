@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #ffffff;
-    --hover-color: #e6e6e6;
-    --sub-menu-bg-color: #bdbdbd;
+    --primary-color: #080808;
+    --hover-color: #6e6e6e;
     --hover-text-color: #e100ff;
-    --text-color: #000000;
+    --text-color: #ffffff;
     --acent-text-color: #00ff4c;
+    --acent-text-color-2: #ff0000;
     --font: 'Poppins', sans-serif;
     --navbar-corner-rounding: 10px;
 }

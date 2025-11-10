@@ -98,8 +98,8 @@
 /* Center gear/logo */
 .gear-main {
     z-index: 1; /* above secondary gear */
-    width: 70%;
-    height: 70%;
+    width: 60%;
+    height: 60%;
     animation: spin-clockwise 8s linear infinite;
 }
 /* meshed gear */
@@ -107,15 +107,20 @@
     z-index: 0; /* behind main gear */
     width: 60%;
     height: 60%;
-    left: -92px; /* offset left */
+    left: -81px; /* offset left */
     animation: spin-counter 8s linear infinite;
+    transform-origin: center;
 }
 /* Spin animations */
 @keyframes spin-clockwise {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
-@keyframes spin-counter {
+/* @keyframes spin-counter {
     from { transform: rotate(0deg); }
     to { transform: rotate(-360deg); }
+} */
+@keyframes spin-counter {
+    from { transform: rotate(22.5deg); }
+    to { transform: rotate(-337.5deg); }
 }

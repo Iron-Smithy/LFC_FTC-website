@@ -177,7 +177,7 @@ nav li {
 
     .dropdown-menu li a {
         padding-left: 3.5rem;
-        background: #a30505;
+        background: var(--sub-menu-bg-color);
         border-left: 3px solid var(--hover-color);
     }
 }

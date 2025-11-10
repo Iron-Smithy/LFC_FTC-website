@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import 'base.css';
+@import '../../../src/styles/header.css';
+@import 'layout.css';
+@import '../../../src/styles/team.css';
+@import 'ourTeam.css';

@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="../src/styles/index.css">
-    <script type="module" src="../src/components/carousel/image-carousel.js"></script>
-    <script src="../src/scripts/index.js" defer></script>
+    <script src="../src/scripts/header.js" defer></script>
 </head>
 <body>
     <header>
@@ -26,11 +25,14 @@
             <li class="hover-effect-icon"><a class="hover-effect-text" href="index.html">Home</a></li>
 
             <li class="hover-effect-icon dropdown">
-                <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">About</button>
-                <ul class="dropdown-menu" role="menu" aria-label="About submenu">
-                    <li class="hover-effect-icon"><a class="hover-effect-text" href="#">Our Team</a></li>
-                    <li class="hover-effect-icon"><a class="hover-effect-text" href="#">Student Members</a></li>
-                    <li class="hover-effect-icon"><a class="hover-effect-text" href="#">Coaches & Mentors</a></li>
+                <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Teams</button>
+                <ul class="dropdown-menu" role="menu" aria-label="Teams submenu">
+                    <li class="hover-effect-icon"><a class="hover-effect-text" href="#">12106</a></li>
+                    <li class="hover-effect-icon"><a class="hover-effect-text" href="#">15084</a></li>
+                    <li class="hover-effect-icon"><a class="hover-effect-text" href="#">15083-Overclock</a></li>
+                    <li class="hover-effect-icon"><a class="hover-effect-text" href="#">20754</a></li>
+                    <li class="hover-effect-icon"><a class="hover-effect-text" href="#">26300-Anomaly</a></li>
+                    <li class="hover-effect-icon"><a class="hover-effect-text" href="#">27099</a></li>
                 </ul>
             </li>
 
@@ -79,14 +81,8 @@
         <section id="teams" class="content-section">
             <div class="team-grid">
                 <a href="../team-15083/15083-index.html" class="team-link">
-                    <!-- <div class="team-card" style="background: black;">
+                    <div class="team-card" style="background: black;">
                         <img src="../public/logos/overclock.png" alt="Team 1 Logo">
-                    </div> -->
-                    <div class="team-card" style="background: black">
-                        <div class="gear-container">
-                            <img src="../public/logos/overclock.png" alt="Team Gear" class="gear gear-main">
-                            <img src="../public/images/gear-secondary.png" alt="Secondary Gear" class="gear gear-secondary">
-                        </div>
                     </div>
                 </a>
                 <a href="../team-15084/15084-index.html" class="team-link">
@@ -95,8 +91,11 @@
                     </div>
                 </a>
                 <a href="../team-12106/12106-index.html" class="team-link">
-                    <div class="team-card spinning" style="background: #ccc;">
-                        <img src="gear.png" alt="Spinning Gear">
+                    <div class="team-card" style="background: black">
+                        <div class="gear-container">
+                            <img src="../public/images/gear-secondary.png" alt="Team Gear" class="gear gear-main">
+                            <img src="../public/images/gear-secondary.png" alt="Secondary Gear" class="gear gear-secondary">
+                        </div>
                     </div>
                 </a>
                 <a href="../team-27099/27099-index.html" class="team-link">

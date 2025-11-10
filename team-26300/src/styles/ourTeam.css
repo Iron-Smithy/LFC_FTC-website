@@ -1,0 +1,62 @@
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 250px));
+    grid-auto-rows: 1fr;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    max-width: calc(3 * 250px + 2 * 20px);
+    margin: 0 auto;
+}
+.member-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    aspect-ratio: 1 / 1;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.member-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+.member-card img {
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+}
+.member-card-sub {
+    margin-top: 0.5rem;
+    font-weight: 600;
+    color: var(--acent-text-color);
+    text-decoration: none;
+}
+.card-tilt:hover {
+    transform: scale(1.05) rotate(-2deg); /* small tilt for fun */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+.team-link:active .member-card {
+    transform: scale(0.95) rotate(-5deg);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+/* Responsive layouts */
+@media (max-width: 800px) {
+    .team-grid {
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+        max-width: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .member-card {
+        font-size: 1rem;
+    }
+}

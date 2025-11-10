@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="src/styles/index.css">
+    <script src="../src/scripts/header.js" defer></script>
+</head>
+<body>
+    <header>
+        <a id="logo" href="../index/index.html">
+        <img src="../public/logos/anomaly.png" alt="Logo">
+        </a>
+
+        <button id="open-sidebar-button" aria-label="Open menu">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+            <path d="M3 6h18M3 12h18M3 18h18" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        </button>
+
+        <nav id="navbar" aria-label="Main navigation" aria-hidden="false">
+        <ul>
+            <li class="hover-effect-icon"><a class="hover-effect-text" href="index.html">Home</a></li>
+
+            <li class="hover-effect-icon dropdown">
+                <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Teams</button>
+                <ul class="dropdown-menu" role="menu" aria-label="Teams submenu">
+                    <li class="hover-effect-icon"><a class="hover-effect-text" href="#">12106</a></li>
+                    <li class="hover-effect-icon"><a class="hover-effect-text" href="#">15084</a></li>
+                    <li class="hover-effect-icon"><a class="hover-effect-text" href="#">15083-Overclock</a></li>
+                    <li class="hover-effect-icon"><a class="hover-effect-text" href="#">20754</a></li>
+                    <li class="hover-effect-icon"><a class="hover-effect-text" href="#">27099</a></li>
+                </ul>
+            </li>
+
+            <li class="hover-effect-icon dropdown">
+                <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Resources</button>
+                <ul class="dropdown-menu" role="menu" aria-label="About submenu">
+                    <li class="hover-effect-icon"><a class="hover-effect-text" href="../Gallery/Gallery.html">Gallery</a></li>
+                    <li class="hover-effect-icon"><a class="hover-effect-text" href="#">Calander</a></li>
+                    <li class="hover-effect-icon"><a class="hover-effect-text" href="#">Contact</a></li>
+                </ul>
+            </li>
+
+            <li class="hover-effect-icon"><a class="hover-effect-text" href="#">Testing</a></li>
+        </ul>
+        </nav>
+
+        <div id="overlay" aria-hidden="true"></div>
+    </header>
+    <main>
+        <h1 class="center title">Team 26300</h1>
+        <section id="who-we-are-section" class="content-section">
+            <div class="container">
+                <h1 class="center">WHO WE ARE</h1>
+                <div class="section-content center">
+                    <p>Team 26300, a First Tech Challenge (FTC) team, is the mentor team for Lowery Robotics intended to teach and mentor freshmen teams</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="our-members" class="content-section">
+            <div class="member-grid">
+                <div class="member-card" style="background: black;">
+                    <span class="team-name">thing #1</span>
+                </div>
+                <div class="member-card" style="background: linear-gradient(45deg, orange, yellow);">
+                    <span class="team-name">thing #2</span>
+                </div>
+                <div class="member-card" style="background: black;">
+                    <span class="team-name">thing #3</span>
+                </div>
+                <div class="member-card" style="background: linear-gradient(45deg, orange, yellow);">
+                    <span class="team-name">thing #4</span>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
