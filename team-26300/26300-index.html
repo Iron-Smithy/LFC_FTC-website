@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="src/styles/index.css">
-    <script src="../src/scripts/header.js" defer></script>
+    <script src="../index/src/scripts/header.js" defer></script>
+    <script src="src/scripts/ourTeam.js" defer></script>
 </head>
 <body>
     <header>
         <a id="logo" href="../index/index.html">
-        <img src="../public/logos/anomaly.png" alt="Logo">
+        <img src="../index/public/logos/anomaly.png" alt="Logo">
         </a>
 
         <button id="open-sidebar-button" aria-label="Open menu">
         <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
-            <path d="M3 6h18M3 12h18M3 18h18" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M3 6h18M3 12h18M3 18h18" stroke="#ff0000" stroke-width="1.5" stroke-linecap="round"/>
         </svg>
         </button>
 
         <nav id="navbar" aria-label="Main navigation" aria-hidden="false">
         <ul>
-            <li class="hover-effect-icon"><a class="hover-effect-text" href="index.html">Home</a></li>
+            <li class="hover-effect-icon"><a class="hover-effect-text" href="../index/index.html">Home</a></li>
 
             <li class="hover-effect-icon dropdown">
                 <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Teams</button>
@@ -62,20 +63,134 @@
 
         <section id="our-members" class="content-section">
             <div class="member-grid">
-                <div class="member-card" style="background: black;">
-                    <span class="team-name">thing #1</span>
+                <div class="member-card">
+                    <div class="card-content">
+                        <img class="member-photo" src="public/images/generic-person-icon.png">
+                        <span class="member-name">Ethan Wallraven</span>    
+                    </div>
+                    <div class="member-info">
+                        <p>Ethan is part of our build team and our drive coach</p>
+                    </div>
                 </div>
-                <div class="member-card" style="background: linear-gradient(45deg, orange, yellow);">
-                    <span class="team-name">thing #2</span>
+
+                <div class="member-card">
+                    <div class="card-content">
+                        <img class="member-photo" src="public/images/generic-person-icon.png">
+                        <span class="member-name sub">Noah Clark</span>
+                    </div>
+                    <div class="member-info">
+                        <p>Noah is part of our build team and a driver</p>
+                    </div>
                 </div>
-                <div class="member-card" style="background: black;">
-                    <span class="team-name">thing #3</span>
+
+                <div class="member-card">
+                    <div class="card-content">
+                        <img class="member-photo" src="public/images/generic-person-icon.png">
+                        <span class="member-name sub">Kevin Ye</span>
+                    </div>
+                    <div class="member-info">
+                        <p>Kevin is part of our build team and a driver</p>
+                    </div>
                 </div>
-                <div class="member-card" style="background: linear-gradient(45deg, orange, yellow);">
-                    <span class="team-name">thing #4</span>
+
+                <div class="member-card">
+                    <div class="card-content">
+                        <img class="member-photo" src="public/images/generic-person-icon.png">
+                        <span class="member-name sub">Aneesha Rajan</span>
+                    </div>
+                    <div class="member-info">
+                        <p>Aneesha is part of our</p>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="card-content">
+                        <img class="member-photo" src="public/images/generic-person-icon.png">
+                        <span class="member-name sub">Shyam Devanathan</span>
+                    </div>
+                    <div class="member-info">
+                        <p>Shyam is part of our</p>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="card-content">
+                        <img class="member-photo" src="public/images/generic-person-icon.png">
+                        <span class="member-name sub">Alexander Richards</span>
+                    </div>
+                    <div class="member-info">
+                        <p>Alexander is part of our</p>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="card-content">
+                        <img class="member-photo" src="public/images/generic-person-icon.png">
+                        <span class="member-name sub">Darika Dhanasekaran</span>
+                    </div>
+                    <div class="member-info">
+                        <p>Darika is part of our</p>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="card-content">
+                        <img class="member-photo" src="public/images/generic-person-icon.png">
+                        <span class="member-name sub">Swara Koduri</span>
+                    </div>
+                    <div class="member-info">
+                        <p>Swara is part of our</p>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="card-content">
+                        <img class="member-photo" src="public/images/generic-person-icon.png">
+                        <span class="member-name sub">Heidi Jeong </span>
+                    </div>
+                    <div class="member-info">
+                        <p>Heidi is part of our</p>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="card-content">
+                        <img class="member-photo" src="public/images/generic-person-icon.png">
+                        <span class="member-name sub">Ivan Smith</span>
+                    </div>
+                    <div class="member-info">
+                        <p>Ivan is part of our programing team</p>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="card-content">
+                        <img class="member-photo" src="public/images/generic-person-icon.png">
+                        <span class="member-name sub">Timothy Wong</span>
+                    </div>
+                    <div class="member-info">
+                        <p>Timmy is part of our programing team</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer>
+        <span class="social">
+            <p class="center">Socials</p>
+            <div class="socialIcons">
+                <a href="" target="_blank" aria-label="navigate to our facebook"><i class="fa-brands fa-2x fa-facebook"></i></a>
+                <a href="" target="_blank" aria-label="navigate to our twitter"><i class="fa-brands fa-2x fa-x-twitter"></i></a>
+                <a href="" target="_blank" aria-label="navigate to our instagram"><i class="fa-brands fa-2x fa-instagram"></i></a>
+            </div>
+        </span>
+        <span class="resources">
+            <p class="center">Resources</p>
+            <div class="resourceIcons">
+                <a href="https://github.com/Iron-Smithy/LFC_FTC-website" target="_blank" aria-label="navigate to our websites git repository" title="See our source code"><i class="fa-brands fa-2x fa-github"></i></a>
+                <a href="https://www.allenisd.org/" target="_blank" aria-label="navigate to our school website" title="see our school page"><i class="fa-solid  fa-xl fa-school"></i></a>
+            </div>
+        </span>
+    </footer>
 </body>
 </html>

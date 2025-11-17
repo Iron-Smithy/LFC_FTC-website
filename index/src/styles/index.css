@@ -5,9 +5,8 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css");
 
 /* Styling */
+@import 'header.css';
 @import 'base.css';
-@import '../../../index/src/styles/header.css';
 @import 'layout.css';
-@import '../../../index/src/styles/team.css';
-@import 'ourTeam.css';
-@import '../../../index/src/styles/footer.css';
+@import 'teams.css';
+@import 'footer.css';

@@ -1,0 +1,27 @@
+Import:
+    in HTML header:
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    or in css:
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css");
+
+to place in html use the <i> tag
+EX: <i class="fa-solid fa-house"></i>
+
+to view icons
+    https://fontawesome.com/
+
+Customization:
+    Styles:
+        Solid fa-solid / fas
+        Regular fa-regular / far
+        Brands fa-brands / fab
+    Sizes:
+        fa-xs, fa-sm, fa-lg, fa-2x, fa-3x, fa-5x, fa-10x  - other options are likely available...
+        (css element selector) i {font-size: (valid size) 40px;}
+    Color:
+        (css element selector) i {color: (valid color) #1877f2;}
+        style="color: (valid color) red;"
+
+    Examples:
+        <a href="" target="_blank" aria-label=""><i class="fa-brands fa-facebook fa-lg"></i></a>
+        <a href="" target="_blank" aria-label=""><i class="fa-solid fa-house"></i></a>
